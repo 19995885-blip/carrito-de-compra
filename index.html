@@ -1,0 +1,200 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alejandro Gamer Shop</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet"
+
+
+</head>
+<body>
+
+img src="fondo.jpg.jpg" class="fondo">
+
+
+  <!-- HEADER -->
+  <header>
+
+    <div class="logo">
+      🎮 alejandro Gamer Shop
+    </div>
+
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Gaming</a>
+      <a href="#">Contacto</a>
+    </nav>
+
+    <div class="carrito-icono">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="contador">0</span>
+    </div>
+
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+
+    <div class="contenido-banner">
+      <h1>🔥 alejandro Gamer Shop 🔥</h1>
+      <p>Las mejores ofertas para verdaderos gamers</p>
+
+      <button>
+        COMPRAR AHORA
+      </button>
+    </div>
+
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="productos">
+
+    <!-- PRODUCTO 1 -->
+    <div class="card">
+
+      <span class="oferta">-25%</span>
+
+      <img src="mouse.jpg.jpg">
+
+      <h2>Mouse RGB Pro</h2>
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+      </div>
+
+      <p>
+        Mouse ultra rápido con luces RGB y sensor profesional.
+      </p>
+
+      <div class="precio">
+        <span class="nuevo">$35</span>
+        <span class="viejo">$50</span>
+      </div>
+
+      <button onclick="agregarCarrito('Mouse RGB Pro',35)">
+        <i class="fa-solid fa-cart-plus"></i>
+        Agregar al carrito
+      </button>
+
+    </div>
+
+    <!-- PRODUCTO 2 -->
+    <div class="card">
+
+      <span class="oferta">TOP</span>
+
+      <img src="teclado.jpg.jpg">
+
+      <h2>Teclado Mecánico</h2>
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+      </div>
+
+      <p>
+        Teclado gamer mecánico con RGB y switches rápidos.
+      </p>
+
+      <div class="precio">
+        <span class="nuevo">$65</span>
+        <span class="viejo">$90</span>
+      </div>
+
+      <button onclick="agregarCarrito('Teclado Mecánico',65)">
+        <i class="fa-solid fa-cart-plus"></i>
+        Agregar al carrito
+      </button>
+
+    </div>
+
+    <!-- PRODUCTO 3 -->
+    <div class="card">
+
+      <span class="oferta">NEW</span>
+
+      <img src="https://images.unsplash.com/photo-1585298723682-7115561c51b7?q=80&w=1200">
+
+      <h2>Headset Gamer</h2>
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+      </div>
+
+      <p>
+        Sonido envolvente 7.1 con micrófono profesional.
+      </p>
+
+      <div class="precio">
+        <span class="nuevo">$70</span>
+        <span class="viejo">$95</span>
+      </div>
+
+      <button onclick="agregarCarrito('Headset Gamer',70)">
+        <i class="fa-solid fa-cart-plus"></i>
+        Agregar al carrito
+      </button>
+
+    </div>
+
+    <!-- PRODUCTO 4 -->
+    <div class="card">
+
+      <span class="oferta">🔥</span>
+
+      <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=1200">
+
+      <h2>Control Elite</h2>
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+      </div>
+
+      <p>
+        Control gamer profesional para juegos competitivos.
+      </p>
+
+      <div class="precio">
+        <span class="nuevo">$55</span>
+        <span class="viejo">$75</span>
+      </div>
+
+      <button onclick="agregarCarrito('Control Elite',55)">
+        <i class="fa-solid fa-cart-plus"></i>
+        Agregar al carrito
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- CARRITO -->
+  <section class="carrito">
+
+    <h2>🛒 TU CARRITO</h2>
+
+    <div id="lista-carrito"></div>
+
+    <div class="total-box">
+      <h3>Total: $<span id="total">0</span></h3>
+
+      <button class="comprar" onclick="comprar()">
+        FINALIZAR COMPRA
+      </button>
+    </div>
+
+  </section>
+
+  <!-- RESULTADO -->
+  <div id="resultadoCompra" class="resultado"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

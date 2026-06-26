@@ -1,0 +1,264 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#050816;
+  color:white;
+}
+
+/* HEADER */
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:#0f172a;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 0 20px #00f7ff;
+}
+
+.logo{
+  font-size:32px;
+  font-weight:bold;
+  color:#00f7ff;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00f7ff;
+}
+
+.carrito-icono{
+  position:relative;
+  font-size:28px;
+  color:#00f7ff;
+}
+
+#contador{
+  position:absolute;
+  top:-10px;
+  right:-12px;
+  background:red;
+  border-radius:50%;
+  padding:3px 8px;
+  font-size:12px;
+}
+
+/* BANNER */
+
+.banner{
+  height:450px;
+  background:url('https://images.unsplash.com/photo-1542751110-97427bbecf20?q=80&w=1600') center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.contenido-banner{
+  text-align:center;
+  background:rgba(0,0,0,0.7);
+  padding:40px;
+  border-radius:20px;
+}
+
+.contenido-banner h1{
+  font-size:60px;
+  color:#00f7ff;
+}
+
+.contenido-banner p{
+  margin:20px 0;
+  font-size:22px;
+}
+
+.contenido-banner button{
+  padding:15px 40px;
+  border:none;
+  border-radius:12px;
+  background:#00f7ff;
+  color:black;
+  font-size:18px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.contenido-banner button:hover{
+  background:#7c3aed;
+  color:white;
+}
+
+/* PRODUCTOS */
+
+.productos{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+  padding:50px;
+}
+
+.card{
+  width:280px;
+  background:#111827;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 0 20px rgba(0,247,255,0.5);
+  transition:0.3s;
+  position:relative;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card h2{
+  text-align:center;
+  margin-top:15px;
+}
+
+.rating{
+  text-align:center;
+  margin:10px 0;
+}
+
+.card p{
+  text-align:center;
+  padding:0 15px;
+  color:#d1d5db;
+}
+
+.precio{
+  text-align:center;
+  margin:15px 0;
+}
+
+.nuevo{
+  color:#00ff88;
+  font-size:28px;
+  font-weight:bold;
+}
+
+.viejo{
+  color:red;
+  text-decoration:line-through;
+  margin-left:10px;
+}
+
+.card button{
+  width:85%;
+  margin:15px auto 20px;
+  display:block;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:#00f7ff;
+  color:black;
+  font-size:17px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card button:hover{
+  background:#7c3aed;
+  color:white;
+}
+
+.oferta{
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:red;
+  padding:6px 12px;
+  border-radius:10px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+/* CARRITO */
+
+.carrito{
+  width:85%;
+  margin:40px auto;
+  background:#111827;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 0 20px rgba(0,247,255,0.4);
+}
+
+.carrito h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#00f7ff;
+}
+
+.item-carrito{
+  background:#1f2937;
+  padding:15px;
+  margin:10px 0;
+  border-radius:12px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.total-box{
+  margin-top:25px;
+  text-align:center;
+}
+
+.total-box h3{
+  font-size:30px;
+  margin-bottom:20px;
+  color:#00ff88;
+}
+
+.comprar{
+  padding:15px 40px;
+  border:none;
+  border-radius:12px;
+  background:#00ff88;
+  color:black;
+  font-size:18px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.comprar:hover{
+  background:#7c3aed;
+  color:white;
+}
+
+/* RESULTADO */
+
+.resultado{
+  width:80%;
+  margin:30px auto;
+  text-align:center;
+  font-size:25px;
+  background:#0f172a;
+  padding:20px;
+  border-radius:15px;
+  color:#00ff88;
+  display:none;
+  box-shadow:0 0 20px #00ff88;
+}
